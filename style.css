@@ -1,0 +1,114 @@
+@keyframes animacao {
+    0%   {background-color:#5A44A6; right:0px; bottom:0px;}
+    25%  {background-color:#F8E816; rigth: 2000px; bottom: 500px; border-width: 50px;}
+    50%  {background-color:#FF402E; rigth:0px; bottom:0px; border-width: 3px;}
+    75%  {background-color:#5A44A6; rigth: 2000px; bottom: 800px; border-width: 50px;}
+    100% {background-color:#F8E816; rigth:0px; bottom:0px;}
+}
+
+@keyframes animacaobody {
+    0%   {background-color: #5A44A6;}
+    50%  {background-color: #F8E816;}
+    100%  {background-color: #FF402E;}
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    animation-name: animacaobody;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#cabecalho {
+    font-family: monospace;
+    font-size: 40px;
+    padding: 20px;
+    margin: 0;
+    width: 50%;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#conteudo {
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    width: 90vw;
+    height: 90vh;
+}
+
+main {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    padding-left: 150px;
+}
+
+.menu {
+    position: relative;
+    font-size: 35px;
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    top: -750px;
+    right: -50px;
+    right: 0;
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right, #D7C1C9, #B670A0, #B7CD40);
+    box-shadow:#B670A0 5px 5px 10px;
+}
+
+#foto {
+    margin: 0;
+    padding: 0;
+    right: 40px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    z-index: 1;
+    position: fixed;
+    animation-name: animacao;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
